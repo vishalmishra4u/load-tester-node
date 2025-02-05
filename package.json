@@ -1,0 +1,17 @@
+{
+  "name": "load-tester",
+  "version": "1.0.0",
+  "description": "A simple Node app to test API  load and return metrics like success, failure, and avg time taken.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node-load-tester"
+  ],
+  "author": "Vishal Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
