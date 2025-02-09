@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // Load test routes
-app.use('/load-test', loadTestRoutes);
+app.use('/api', loadTestRoutes);
 
 const PORT = process.env.PORT || 3000;
 startCluster(() => {

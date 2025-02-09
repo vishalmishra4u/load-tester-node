@@ -13,7 +13,9 @@
   "author": "Vishal Mishra",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "uuid": "^11.0.5"
   },
   "devDependencies": {
     "pm2": "^5.4.3"
