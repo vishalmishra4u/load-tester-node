@@ -25,15 +25,15 @@ router.post('/load-test', (req, res) => {
 
     worker.on('error', (error) => {
         jobs[jobId] = { status: 'failed', results: null, error: error.message };
-      });
-    
-      worker.on('exit', (code) => {
-        if (code !== 0) {
-          jobs[jobId] = { status: 'failed', results: null, error: 'Worker exited with an error' };
-        }
-      });
-    
-      res.json({ jobId });
+    });
+  
+    worker.on('exit', (code) => {
+      if (code !== 0) {
+        jobs[jobId] = { status: 'failed', results: null, error: 'Worker exited with an error' };
+      }
+    });
+  
+    res.json({ jobId });
 });
 
 router.get('/load-test/:jobId', (req, res) => {
@@ -44,6 +44,6 @@ router.get('/load-test/:jobId', (req, res) => {
     }
   
     res.json(jobs[jobId]);
-  });
+});
   
-  export default router;
+module.exports = router;

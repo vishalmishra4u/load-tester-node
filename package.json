@@ -4,6 +4,7 @@
   "description": "A simple Node app to test API  load and return metrics like success, failure, and avg time taken.",
   "main": "app.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
